@@ -1,0 +1,7 @@
+Alphabet Dataset
+  1. Train Dataset: https://drive.google.com/file/d/1uCU6Bq7YJ1DAi1nis770HgsQUeRUytAk/view?usp=sharing
+  2. Validation Dataset: https://drive.google.com/file/d/16g6ZiAnqf0oNTdYPDZ6XK-X1kmhPePw-/view?usp=sharing
+  3. Test Dataset: https://drive.google.com/file/d/1Who1NGRwN-2ciXP-NGkbzRKOZuH_5Gfx/view?usp=sharing
+ 
+Word Dataset:
+  https://drive.google.com/file/d/1Bwj-Nj4c34bStnwC0X7pE3XDfpWgJKaP/view?usp=sharing
