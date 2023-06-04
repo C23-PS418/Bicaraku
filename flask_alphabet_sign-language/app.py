@@ -23,7 +23,6 @@ def predict():
     gray_image = image.convert('L')
 
     gray_image = np.array(gray_image).flatten()
-    gray_image = gray_image / 255.0
     gray_image = gray_image.reshape(-1, 50, 50, 1)
 
     proba = model.predict(gray_image)
