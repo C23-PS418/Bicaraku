@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.AboutUs">
+
+    <RelativeLayout
+        android:id="@+id/layout_abjad"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007">
+
+        <TextView
+            android:id="@+id/name_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Tentang Kami"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/arrow_back"
+            android:drawableTop="@drawable/arrow_back"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_about"/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="240dp"
+        android:textColor="@color/grey_dark"
+        android:layout_marginLeft="30dp"
+        android:text="    Bicaraku adalah sebuah aplikasi yang dapat membantu masyarakat untuk berkomunikasi dengan penyandang disabilitas tuna rungu dan tuna wicara dengan menggunakan bahasa isyarat. Tujuan utama dari aplikasi ini adalah untuk meningkatkan pengetahuan orang awam tentang bahasa isyarat dan memudahkan orang yang tidak mengerti bahasa isyarat untuk berkomunikasi dengan penyandang disabilitas tunarungu dan tunawicara tanpa ada batasan. "/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="420dp"
+        android:textColor="@color/grey_dark"
+        android:layout_marginLeft="30dp"
+        android:text="    Meskipun mempelajari bahasa isyarat membutuhkan waktu untuk mempelajari dan memahaminya, namun diharapkan aplikasi ini dapat membantu memberikan alat bantu yang mudah digunakan oleh para penyandang disabilitas tuna rungu dan tuna wicara dalam berkomunikasi dengan orang lain, sehingga mereka tidak hanya dapat berkomunikasi dengan orang-orang tertentu saja. "/>
+
+
+</FrameLayout>

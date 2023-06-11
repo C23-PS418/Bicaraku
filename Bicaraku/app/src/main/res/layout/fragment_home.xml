@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Home">
+
+    <ScrollView
+        android:id="@+id/pelajaran"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/home_isyarat"
+                android:background="@drawable/shape_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button_abjad"
+                android:layout_width="140dp"
+                android:layout_height="138dp"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="320dp"
+                android:backgroundTint="@color/light_blue"
+                tools:text="@string/button_text"
+                app:cornerRadius="13dp"/>
+
+            <Button
+                android:id="@+id/button_kata"
+                android:layout_width="140dp"
+                android:layout_height="138dp"
+                android:layout_marginStart="212dp"
+                android:layout_marginTop="320dp"
+                android:backgroundTint="@color/light_purple"
+                tools:text="@string/button_text"
+                app:cornerRadius="13dp"/>
+
+            <TextView android:id="@+id/kategori"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/grey_dark"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="281dp"
+                android:layout_width="91dp"
+                android:layout_height="38dp"
+                android:text="Kategori"/>
+
+            <TextView android:id="@+id/pelajaran_txt"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/dark_blue"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="67dp"
+                android:layout_width="147dp"
+                android:layout_height="44dp"
+                android:text="Pelajaran" />
+
+            <TextView
+                android:id="@+id/abjad"
+                android:layout_width="53dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="106dp"
+                android:layout_marginTop="460dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Abjad"
+                android:textColor="@color/grey_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/kata"
+                android:layout_width="46dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="268dp"
+                android:layout_marginTop="460dp"
+                android:text="Kata"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/grey_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sibi"
+                android:layout_width="50dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="72dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="SIBI"
+                android:textColor="@color/light_blue"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_marginTop="128dp"
+                android:layout_marginStart="38dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <View
+                    android:id="@+id/rectangle_3"
+                    android:background="@drawable/rectangle_3"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="324dp"
+                    android:layout_height="130dp" />
+
+                <TextView
+                    android:id="@+id/selamat_dtg"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/light_purple"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_width="140dp"
+                    android:layout_height="20dp"
+                    android:text="Selamat datang di"
+                    />
+
+                <TextView android:id="@+id/di_bicaraku"
+                    android:textStyle="bold"
+                    android:textSize="26sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:text="Bicaraku"
+                    />
+
+                <ImageView android:id="@+id/logos"
+                    android:src="@drawable/logo_b"
+                    android:contentDescription="logo_bicaraku"
+                    android:layout_marginStart="194dp"
+                    android:layout_marginTop="-2dp"
+                    android:layout_width="140dp"
+                    android:layout_height="147dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>
