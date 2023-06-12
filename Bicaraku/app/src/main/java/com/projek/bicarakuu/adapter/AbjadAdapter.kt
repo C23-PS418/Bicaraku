@@ -9,10 +9,24 @@ import androidx.recyclerview.widget.RecyclerView
 import com.projek.bicarakuu.R
 import com.projek.bicarakuu.data.DataModel
 
-class AbjadAdapter(private val context: Context, private var dataList: List<DataModel>) : RecyclerView.Adapter<AbjadAdapter.ViewHolder>() {
+class AbjadAdapter(
+    private val context: Context,
+    private var dataList: List<DataModel>,
+    private val itemClickListener: AbjadItemClickListener?
+) : RecyclerView.Adapter<AbjadAdapter.ViewHolder>() {
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var image: ImageView = itemView.findViewById(R.id.list_icon_abjad)
+
+        init {
+            itemView.setOnClickListener {
+                val position = adapterPosition
+                if (position != RecyclerView.NO_POSITION && itemClickListener != null) {
+                    val dataModel = dataList[position]
+                    itemClickListener.onItemClick(dataModel)
+                }
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -26,4 +40,8 @@ class AbjadAdapter(private val context: Context, private var dataList: List<Data
     }
 
     override fun getItemCount() = dataList.size
+
+    interface AbjadItemClickListener {
+        fun onItemClick(dataModel: DataModel)
+    }
 }
