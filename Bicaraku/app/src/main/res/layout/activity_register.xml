@@ -21,11 +21,12 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="158dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="60sp"
-                android:text="Register"
                 android:fontFamily="@font/poppins_semibold"
+                android:text="Daftar"
                 android:textAlignment="center"
                 android:textColor="@color/dark_blue"
                 android:textSize="24sp"
@@ -138,7 +139,8 @@
         android:layout_marginBottom="180dp"
         android:fontFamily="@font/poppins_semibold"
         android:backgroundTint="@color/dark_blue"
-        android:text="Login"
+        android:text="Daftar"
+        android:letterSpacing="0"
         android:textAllCaps="false"
         android:textSize="14sp"
         app:cornerRadius="13dp"
@@ -147,12 +149,15 @@
         app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/editText_pw" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/or_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="130dp"
-        android:background="@drawable/or"
+        android:text="Atau"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="12sp"
+        android:textColor="@color/grey_dark"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="@+id/loginButton"
         app:layout_constraintStart_toStartOf="@+id/loginButton"
@@ -169,7 +174,8 @@
         android:paddingStart="0dp"
         android:paddingEnd="30dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Login dengan Google"
+        android:letterSpacing="0"
+        android:text="Masuk dengan Google"
         android:textAllCaps="false"
         android:textColor="@color/dark_blue"
         android:textSize="12sp"
@@ -177,7 +183,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/frameLayout"
         app:layout_constraintStart_toStartOf="@+id/frameLayout"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/or_txt" />
 
     <FrameLayout
         android:id="@+id/frameLayout2"
@@ -200,10 +206,11 @@
                 android:textAlignment="center" />
 
             <TextView
+                android:id="@+id/clickMasuk"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:clickable="true"
-                android:text="Login"
+                android:text="Masuk"
                 android:textAlignment="center"
                 android:textColor="@color/purple_blue"
                 android:textStyle="bold" />

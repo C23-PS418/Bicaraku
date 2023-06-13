@@ -29,13 +29,7 @@ class ListAbjad : Fragment() {
 
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
 
-        abjadAdapter = AbjadAdapter(requireContext(), dataList, object : AbjadAdapter.AbjadItemClickListener {
-            override fun onItemClick(dataModel: DataModel) {
-                val intent = Intent(requireContext(), AbjadDetailActivity::class.java)
-                intent.putExtra("data", dataModel as Parcelable)
-                startActivity(intent)
-            }
-        })
+        abjadAdapter = AbjadAdapter(requireContext(), dataList)
         recyclerView.layoutManager = GridLayoutManager(requireContext(), 4)
         recyclerView.adapter = abjadAdapter
 

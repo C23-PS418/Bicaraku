@@ -110,53 +110,119 @@
                 android:textColor="@color/light_blue"
                 android:textSize="20sp" />
 
-            <RelativeLayout
-                android:layout_marginTop="128dp"
-                android:layout_marginStart="38dp"
-                android:layout_width="wrap_content"
+            <HorizontalScrollView
+                android:layout_width="380dp"
                 android:layout_height="wrap_content"
-                >
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="15dp">
 
-                <View
-                    android:id="@+id/rectangle_3"
-                    android:background="@drawable/rectangle_3"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_width="324dp"
-                    android:layout_height="130dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
 
-                <TextView
-                    android:id="@+id/selamat_dtg"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:textColor="@color/light_purple"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="45dp"
-                    android:layout_width="140dp"
-                    android:layout_height="20dp"
-                    android:text="Selamat datang di"
-                    />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_gravity="center_horizontal">
 
-                <TextView android:id="@+id/di_bicaraku"
-                    android:textStyle="bold"
-                    android:textSize="26sp"
-                    android:textColor="@color/white"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="65dp"
-                    android:layout_width="140dp"
-                    android:layout_height="40dp"
-                    android:text="Bicaraku"
-                    />
+                        <View
+                            android:id="@+id/rectangle_3"
+                            android:background="@drawable/rectangle_3"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="324dp"
+                            android:layout_height="128dp" />
 
-                <ImageView android:id="@+id/logos"
-                    android:src="@drawable/logo_b"
-                    android:contentDescription="logo_bicaraku"
-                    android:layout_marginStart="194dp"
-                    android:layout_marginTop="-2dp"
-                    android:layout_width="140dp"
-                    android:layout_height="147dp" />
+                        <TextView
+                            android:id="@+id/selamat_dtg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="50dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Selamat datang di"
+                            android:textColor="@color/light_purple"
+                            android:textSize="12sp" />
 
-            </RelativeLayout>
+                        <TextView
+                            android:id="@+id/di_bicaraku"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="65dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Bicaraku"
+                            android:textColor="@color/white"
+                            android:textSize="26sp" />
+
+                        <ImageView
+                            android:id="@+id/logos"
+                            android:layout_width="147dp"
+                            android:layout_height="147dp"
+                            android:layout_marginLeft="190dp"
+                            android:contentDescription="logo_bicaraku"
+                            android:src="@drawable/ic_logo_bicarakuu" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <View
+                            android:id="@+id/rectangle_4"
+                            android:background="@drawable/rectangle_4"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="324dp"
+                            android:layout_height="128dp" />
+
+                        <TextView
+                            android:id="@+id/coba_isyarat"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="190dp"
+                            android:layout_marginTop="35dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Yuk coba untuk belajar bahasa"
+                            android:textColor="@color/light_purple"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/isyarats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="190dp"
+                            android:layout_marginTop="65dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Isyarat"
+                            android:textColor="@color/white"
+                            android:textSize="26sp" />
+
+                        <ImageView
+                            android:id="@+id/logosA"
+                            android:layout_width="147dp"
+                            android:layout_height="147dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="8.5dp"
+                            android:contentDescription="Logo Slide B"
+                            android:src="@drawable/scroll_b" />
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
 
         </RelativeLayout>
 

@@ -1,9 +1,9 @@
 package com.projek.bicarakuu
 
-import android.nfc.NfcAdapter.EXTRA_DATA
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.projek.bicarakuu.data.DataModel
 import com.projek.bicarakuu.databinding.ActivityAbjadBinding
 import com.projek.bicarakuu.fragment.ListAbjad
 
@@ -17,7 +17,7 @@ class AbjadActivity : AppCompatActivity() {
 
         replaceFragment(ListAbjad())
 
-        val receivedData = intent.getStringExtra("key_data")
+        val receivedData = intent.getParcelableExtra<DataModel>("data")
         if (receivedData != null) {
         }
     }

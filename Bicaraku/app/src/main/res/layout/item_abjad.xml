@@ -11,7 +11,7 @@
 
     <ImageView
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="90dp"
         android:background="@color/dark_blue"
         android:id="@+id/list_icon_abjad"/>
 

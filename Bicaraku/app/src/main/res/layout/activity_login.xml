@@ -21,10 +21,11 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="134dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60sp"
-                android:text="Login"
+                android:layout_marginLeft="30dp"
+                android:text="Masuk"
                 android:fontFamily="@font/poppins_semibold"
                 android:textAlignment="center"
                 android:textColor="@color/dark_blue"
@@ -107,8 +108,9 @@
         android:layout_marginBottom="260dp"
         android:backgroundTint="@color/dark_blue"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Login"
+        android:text="Masuk"
         android:textAllCaps="false"
+        android:letterSpacing="0"
         android:textSize="14sp"
         app:cornerRadius="13dp"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
@@ -116,12 +118,15 @@
         app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/editText_pw" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/or_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="220dp"
-        android:background="@drawable/or"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Atau"
+        android:textSize="12sp"
+        android:textColor="@color/grey_dark"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="@+id/loginButton"
         app:layout_constraintStart_toStartOf="@+id/loginButton"
@@ -138,7 +143,8 @@
         android:paddingStart="0dp"
         android:paddingEnd="30dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Login dengan Google"
+        android:text="Masuk dengan Google"
+        android:letterSpacing="0"
         android:textAllCaps="false"
         android:textColor="@color/dark_blue"
         android:textSize="12sp"
@@ -146,7 +152,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/frameLayout"
         app:layout_constraintStart_toStartOf="@+id/frameLayout"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/or_txt" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -170,14 +176,15 @@
                 android:fontFamily="@font/poppins_medium"/>
 
             <TextView
+                android:id="@+id/clickDaftar"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:clickable="true"
-                android:text="Register"
+                android:text="Daftar Sekarang"
                 android:textSize="12sp"
                 android:fontFamily="@font/poppins_medium"
                 android:textAlignment="center"
-                android:textColor="@color/purple_blue"
+                android:textColor="@color/dark_blue"
                 android:textStyle="bold" />
 
         </LinearLayout>
