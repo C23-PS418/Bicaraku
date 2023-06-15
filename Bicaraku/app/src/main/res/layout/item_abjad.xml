@@ -3,15 +3,25 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+<<<<<<< HEAD
     app:cardPreventCornerOverlap="true"
     app:cardCornerRadius="10dp"
+=======
+    app:cardCornerRadius="12dp"
+    app:cardElevation="0dp"
+    app:cardPreventCornerOverlap="true"
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     app:cardUseCompatPadding="true">
 
 
     <ImageView
         android:layout_width="100dp"
+<<<<<<< HEAD
         android:layout_height="95dp"
         android:layout_marginLeft="-3dp"
+=======
+        android:layout_height="90dp"
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
         android:background="@color/dark_blue"
         android:id="@+id/list_icon_abjad"/>
 

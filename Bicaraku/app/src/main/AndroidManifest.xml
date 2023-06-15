@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET" />
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     <uses-feature android:name="android.hardware.camera" />
 
     <uses-permission android:name="android.permission.CAMERA" />
@@ -18,10 +21,14 @@
         android:theme="@style/Theme.Bicarakuu"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".HubungiActivity"
             android:exported="false" />
         <activity
             android:name=".HelpUsActivity"
+=======
+            android:name=".KataActivity"
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
             android:exported="false" />
         <activity
             android:name=".camera.SecondActivity"
@@ -36,9 +43,12 @@
             android:name=".AbjadDetailActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name=".AboutActivity"
             android:exported="false" />
         <activity
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
@@ -50,7 +60,17 @@
         </activity>
         <activity
             android:name=".MainActivity"
+<<<<<<< HEAD
             android:exported="true"></activity>
+=======
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     </application>
 
 </manifest>

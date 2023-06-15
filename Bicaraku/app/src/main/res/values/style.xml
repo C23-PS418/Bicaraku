@@ -10,6 +10,7 @@
         <item name="cornerSize">20dp</item>
     </style>
 
+<<<<<<< HEAD
     <style name="BottomNavigationView" parent="Widget.Design.BottomNavigationView">
         <item name="android:textSize">8sp</item>
         <item name="android:fontFamily">@font/poppins_medium</item>
@@ -22,6 +23,11 @@
 
     <style name="BottomNavigationView.Inactive" parent="BottomNavigationView">
         <item name="android:textSize">8sp</item>
+=======
+    <style name="ShapeAppearanceOverlay.AppCompat.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     </style>
 
 

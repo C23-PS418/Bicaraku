@@ -13,6 +13,7 @@
         android:layout_height="match_parent"/>
 
     <com.google.android.material.bottomappbar.BottomAppBar
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
@@ -32,9 +33,34 @@
             app:itemTextAppearanceInactive="@style/BottomNavigationView.Inactive" />
 
 
+=======
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:elevation="0dp"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:backgroundTint="@color/white">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="20dp"
+            app:itemHorizontalTranslationEnabled="false"
+            app:itemIconSize="40dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_nav" />
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     </com.google.android.material.bottomappbar.BottomAppBar>
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< HEAD
+=======
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.Home">
 
+<<<<<<< HEAD
+=======
+    <ScrollView
+        android:id="@+id/pelajaran"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
         <RelativeLayout
             android:id="@+id/content_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+<<<<<<< HEAD
 
             <View
                 android:id="@+id/home_isyarat"
@@ -29,6 +41,35 @@
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="0dp"
                 android:src="@drawable/kat_abjad" />
+=======
+            <View
+                android:id="@+id/home_isyarat"
+                android:background="@drawable/shape_rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/button_abjad"
+                android:layout_width="150dp"
+                android:layout_height="138dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="330dp"
+                android:src="@drawable/kat_abjad"
+                app:cornerRadius="13dp" />
+
+            <ImageView
+                android:id="@+id/button_kata"
+                android:layout_width="150dp"
+                android:layout_height="138dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="52dp"
+                android:layout_marginTop="330dp"
+                android:src="@drawable/kat_kata"
+                app:cornerRadius="13dp" />
+
+
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
             <TextView
                 android:id="@+id/kategori"
                 android:layout_width="wrap_content"
@@ -36,12 +77,20 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="38dp"
                 android:layout_marginLeft="38dp"
+<<<<<<< HEAD
                 android:layout_marginTop="340dp"
+=======
+                android:layout_marginTop="290dp"
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Kategori"
                 android:textColor="@color/grey_dark"
                 android:textSize="16sp"
+<<<<<<< HEAD
                 android:textStyle="bold"/>
+=======
+                android:textStyle="bold" />
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 
             <TextView
                 android:id="@+id/pelajaran_txt"
@@ -58,6 +107,37 @@
                 android:textStyle="bold" />
 
             <TextView
+<<<<<<< HEAD
+=======
+                android:id="@+id/abjad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_abjad"
+                android:layout_alignStart="@+id/button_abjad"
+                android:layout_alignEnd="@+id/button_abjad"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Abjad"
+                android:textAlignment="center"
+                android:textColor="@color/grey_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/kata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_kata"
+                android:layout_alignStart="@+id/button_kata"
+                android:layout_alignEnd="@+id/button_kata"
+                android:fontFamily="@font/poppins_regular"
+                android:textAlignment="center"
+                android:text="Kata"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/grey_dark"
+                android:textSize="12sp" />
+
+            <TextView
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
                 android:id="@+id/sibi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -69,6 +149,7 @@
                 android:textColor="@color/light_blue"
                 android:textSize="20sp" />
 
+<<<<<<< HEAD
         </RelativeLayout>
 
 
@@ -92,5 +173,125 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
+=======
+            <HorizontalScrollView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <View
+                            android:id="@+id/rectangle_3"
+                            android:background="@drawable/rectangle_3"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="324dp"
+                            android:layout_height="128dp" />
+
+                        <TextView
+                            android:id="@+id/selamat_dtg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="50dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Selamat datang di"
+                            android:textColor="@color/light_purple"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/di_bicaraku"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="65dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Bicaraku"
+                            android:textColor="@color/white"
+                            android:textSize="26sp" />
+
+                        <ImageView
+                            android:id="@+id/logos"
+                            android:layout_width="147dp"
+                            android:layout_height="147dp"
+                            android:layout_marginLeft="190dp"
+                            android:contentDescription="logo_bicaraku"
+                            android:src="@drawable/ic_logo_bicarakuu" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <View
+                            android:id="@+id/rectangle_4"
+                            android:background="@drawable/rectangle_4"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="324dp"
+                            android:layout_height="128dp" />
+
+                        <TextView
+                            android:id="@+id/coba_isyarat"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="190dp"
+                            android:layout_marginTop="35dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Yuk coba untuk belajar bahasa"
+                            android:textColor="@color/light_purple"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/isyarats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="190dp"
+                            android:layout_marginTop="65dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Isyarat"
+                            android:textColor="@color/white"
+                            android:textSize="26sp" />
+
+                        <ImageView
+                            android:id="@+id/logosA"
+                            android:layout_width="147dp"
+                            android:layout_height="147dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="8.5dp"
+                            android:contentDescription="Logo Slide B"
+                            android:src="@drawable/scroll_b" />
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 
 </FrameLayout>

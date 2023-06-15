@@ -2,12 +2,16 @@ package com.projek.bicarakuu.fragment
 
 import android.content.Intent
 import android.os.Bundle
+<<<<<<< HEAD
 import android.os.Handler
 import android.os.Looper
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+<<<<<<< HEAD
 import androidx.viewpager.widget.ViewPager
 import com.projek.bicarakuu.AbjadActivity
 import com.projek.bicarakuu.R
@@ -26,6 +30,21 @@ class Home : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+=======
+import com.projek.bicarakuu.AbjadActivity
+import com.projek.bicarakuu.KataActivity
+import com.projek.bicarakuu.databinding.FragmentHomeBinding
+
+class Home : Fragment() {
+    private lateinit var binding: FragmentHomeBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
         return binding.root
     }
 
@@ -34,7 +53,10 @@ class Home : Fragment() {
 
         val receivedData = arguments?.getString("data_home")
         if (receivedData != null) {
+<<<<<<< HEAD
             // Do something with receivedData
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
         }
 
         binding.buttonAbjad.setOnClickListener {
@@ -43,6 +65,7 @@ class Home : Fragment() {
             startActivity(intent)
         }
 
+<<<<<<< HEAD
         vpSlider = binding.vpSlider
         val arraySlide = ArrayList<Int>()
         arraySlide.add(R.drawable.slider_1)
@@ -68,4 +91,12 @@ class Home : Fragment() {
         sliderHandler.removeCallbacks(sliderRunnable)
     }
 
+=======
+        binding.buttonKata.setOnClickListener {
+            val intent = Intent(requireContext(), KataActivity::class.java)
+            intent.putExtra("key_data", "data")
+            startActivity(intent)
+        }
+    }
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 }

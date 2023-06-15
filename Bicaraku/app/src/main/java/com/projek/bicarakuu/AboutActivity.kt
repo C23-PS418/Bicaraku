@@ -1,5 +1,6 @@
 package com.projek.bicarakuu
 
+<<<<<<< HEAD
 import android.graphics.Color
 import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
@@ -52,5 +53,14 @@ class AboutActivity : AppCompatActivity() {
         toolbar.setNavigationOnClickListener {
             onBackPressed()
         }
+=======
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class AboutActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_about)
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     }
 }

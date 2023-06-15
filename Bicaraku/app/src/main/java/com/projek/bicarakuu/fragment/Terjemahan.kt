@@ -2,22 +2,31 @@ package com.projek.bicarakuu.fragment
 
 import android.Manifest
 import android.app.Activity
+<<<<<<< HEAD
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+=======
+import android.content.Intent
+import android.content.pm.PackageManager
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+<<<<<<< HEAD
 import android.os.Handler
 import android.os.Looper
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
+<<<<<<< HEAD
 import com.airbnb.lottie.LottieAnimationView
 import com.google.android.material.snackbar.Snackbar
 import com.projek.bicarakuu.R
@@ -41,6 +50,19 @@ import java.io.InputStreamReader
 class Terjemahan : Fragment() {
     private var _binding: FragmentTerjemahanBinding? = null
     private lateinit var loadingAnimationView: LottieAnimationView
+=======
+import com.projek.bicarakuu.R
+import com.projek.bicarakuu.camera.CameraActivity
+import com.projek.bicarakuu.camera.SecondActivity
+import com.projek.bicarakuu.camera.utils.rotateFile
+import com.projek.bicarakuu.camera.utils.uriToFile
+import com.projek.bicarakuu.databinding.FragmentTerjemahanBinding
+import java.io.File
+
+
+class Terjemahan : Fragment() {
+   private var _binding: FragmentTerjemahanBinding? = null
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     private val binding get() = _binding!!
 
     companion object {
@@ -57,12 +79,18 @@ class Terjemahan : Fragment() {
     ): View {
         _binding = FragmentTerjemahanBinding.inflate(inflater, container, false)
         return binding.root
+<<<<<<< HEAD
 
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+<<<<<<< HEAD
         loadingAnimationView = binding.loadingAnimationView
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
         if (!allPermissionsGranted()) {
             requestPermissions(
                 REQUIRED_PERMISSIONS,
@@ -71,7 +99,10 @@ class Terjemahan : Fragment() {
         }
         binding.tkCamButton.setOnClickListener { startCameraX() }
         binding.GaleryButton.setOnClickListener { startGallery() }
+<<<<<<< HEAD
         loadLabels()
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     }
 
     override fun onDestroyView() {
@@ -100,17 +131,26 @@ class Terjemahan : Fragment() {
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
         if (result.resultCode == Activity.RESULT_OK) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
             val selectedImg = result.data?.data as Uri
             selectedImg.let { uri ->
                 val myFile = uriToFile(uri, requireContext())
                 val bitmap = BitmapFactory.decodeFile(myFile.path)
 
+<<<<<<< HEAD
                 binding.previewImageView.setImageBitmap(bitmap)
                 outputGenerator(bitmap)
 //                val intent = Intent(requireContext(), SecondActivity::class.java)
 //                intent.putExtra("bitmap", bitmap)
 //                startActivity(intent)
+=======
+                val intent = Intent(requireContext(), SecondActivity::class.java)
+                intent.putExtra("bitmap", bitmap)
+                startActivity(intent)
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
             }
         }
     }
@@ -119,7 +159,10 @@ class Terjemahan : Fragment() {
         ActivityResultContracts.StartActivityForResult()
     ) {
         if (it.resultCode == CAMERA_X_RESULT) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
             val myFile = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                 it.data?.getSerializableExtra("picture", File::class.java)
             } else {
@@ -132,6 +175,7 @@ class Terjemahan : Fragment() {
             myFile?.let { file ->
                 rotateFile(file, isBackCamera)
                 val bitmap = BitmapFactory.decodeFile(file.path)
+<<<<<<< HEAD
                 binding.previewImageView.setImageBitmap(bitmap)
                 outputGenerator(bitmap)
 //                val intent = Intent(requireContext(), SecondActivity::class.java)
@@ -232,4 +276,14 @@ class Terjemahan : Fragment() {
     }, animationDuration)
 
     }
+=======
+
+                val intent = Intent(requireContext(), SecondActivity::class.java)
+                intent.putExtra("bitmap", bitmap)
+                startActivity(intent)
+            }
+        }
+    }
+
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 }

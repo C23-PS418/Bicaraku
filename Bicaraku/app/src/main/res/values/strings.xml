@@ -4,8 +4,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="output_label">Output: %s</string>
+<<<<<<< HEAD
     <string name="Pelajaran">Pelajaran</string>
     <string name="Terjemahan">Terjemahan</string>
     <string name="Pengaturan">Pengaturan</string>
 
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 </resources>

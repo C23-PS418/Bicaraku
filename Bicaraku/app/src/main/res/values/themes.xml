@@ -10,12 +10,19 @@
         <item name="colorSecondaryVariant">@color/light_purple</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
+<<<<<<< HEAD
         <item name="android:statusBarColor">@color/white</item>
+=======
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
         <!-- Customize your theme here. -->
     </style>
 
     <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@color/dark_blue</item>
+<<<<<<< HEAD
         <item name="android:statusBarColor">@color/dark_blue</item>
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     </style>
 </resources>

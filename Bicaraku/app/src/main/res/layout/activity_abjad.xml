@@ -10,14 +10,22 @@
         android:id="@+id/frame_Abjad"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+<<<<<<< HEAD
         android:layout_marginTop="60dp">
+=======
+        android:layout_marginTop="100dp">
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     </FrameLayout>
 
 
     <RelativeLayout
         android:id="@+id/layout_abjad"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="wrap_content"
+=======
+        android:layout_height="78dp"
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,6 +34,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.007">
 
+<<<<<<< HEAD
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -36,4 +45,28 @@
     </RelativeLayout>
 
 
+=======
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/arrow_back"
+            android:drawableTop="@drawable/arrow_back"/>
+
+        <TextView
+            android:id="@+id/name_abjad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Abjad"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 </androidx.constraintlayout.widget.ConstraintLayout>

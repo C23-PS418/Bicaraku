@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".fragment.Profile">
 
     <FrameLayout
@@ -12,6 +13,9 @@
         android:layout_height="match_parent"
         android:layout_marginTop="100dp">
     </FrameLayout>
+=======
+    tools:context=".fragment.Home">
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 
     <RelativeLayout
         android:id="@+id/layout_profile"
@@ -29,13 +33,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+<<<<<<< HEAD
             android:text="Pengaturan"
+=======
+            android:text="Profil Saya"
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
             android:fontFamily="@font/poppins_semibold"
             android:textAlignment="center"
             android:textColor="@color/dark_blue"
             android:textSize="20sp"
             android:textStyle="bold" />
 
+<<<<<<< HEAD
     </RelativeLayout>
 
     <TextView
@@ -79,4 +88,108 @@
         android:layout_height="55dp"
         android:src="@drawable/ic_hubungi"/>
 
+=======
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/name_profile"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.AppCompat.Circle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="155dp"
+            android:layout_marginBottom="494dp" />
+
+        <TextView
+            android:id="@+id/name_profile_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="450dp"
+            android:textSize="16sp"
+            android:textColor="@color/grey_dark"
+            tools:text="Example Name"/>
+
+        <TextView
+            android:id="@+id/email_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="430dp"
+            tools:text="samplemail@gmail.com"
+            android:textSize="14sp"
+            android:textColor="@color/grey_dark" />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="342dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/tentang" />
+
+        <Button
+            android:id="@+id/tentangButton"
+            android:layout_width="296dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginBottom="260dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginLeft="78dp"
+            android:backgroundTint="@color/light_blue2"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="14dp"
+            android:text="Tentang Bicaraku"
+            android:textColor="@color/grey_dark"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:cornerRadius="13dp"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="402dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/bantuan" />
+
+        <Button
+            android:id="@+id/bantuanButton"
+            android:layout_width="296dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginBottom="260dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginLeft="78dp"
+            android:backgroundTint="@color/light_blue2"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="Bantuan"
+            android:textColor="@color/grey_dark"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:cornerRadius="13dp"/>
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="340dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="500dp"
+            android:layout_marginBottom="260dp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="Keluar"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:cornerRadius="13dp" />
+
+    </RelativeLayout>
+
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 </FrameLayout>

@@ -1,5 +1,6 @@
 package com.projek.bicarakuu
 
+<<<<<<< HEAD
 import android.graphics.Color
 import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,10 @@ import android.util.TypedValue
 import android.view.Gravity
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
+=======
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 import androidx.fragment.app.Fragment
 import com.projek.bicarakuu.data.DataModel
 import com.projek.bicarakuu.databinding.ActivityAbjadBinding
@@ -26,6 +31,7 @@ class AbjadActivity : AppCompatActivity() {
         val receivedData = intent.getParcelableExtra<DataModel>("data")
         if (receivedData != null) {
         }
+<<<<<<< HEAD
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -58,11 +64,19 @@ class AbjadActivity : AppCompatActivity() {
 
     }
     
+=======
+    }
+
+
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
     private fun replaceFragment(fragment: Fragment){
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frame_Abjad,fragment)
         fragmentTransaction.commit()
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 44ee652983da6571bee00978e1fa447dc086feca
 }
