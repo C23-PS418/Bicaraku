@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.MyImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">8sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="BottomNavigationView">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="BottomNavigationView.Inactive" parent="BottomNavigationView">
+        <item name="android:textSize">8sp</item>
+    </style>
+
+
+
+</resources>

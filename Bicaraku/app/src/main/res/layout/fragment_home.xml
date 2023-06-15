@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Home">
+
+        <RelativeLayout
+            android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:id="@+id/home_isyarat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rec" />
+
+            <ImageView
+                android:id="@+id/button_abjad"
+                android:layout_width="351dp"
+                android:layout_height="184dp"
+                android:layout_below="@+id/kategori"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/kat_abjad" />
+            <TextView
+                android:id="@+id/kategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="38dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="340dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Kategori"
+                android:textColor="@color/grey_dark"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/pelajaran_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="38dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="67dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Pelajaran"
+                android:textColor="@color/dark_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sibi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="SIBI"
+                android:textColor="@color/light_blue"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_marginTop="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_slider"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:contentDescription="Slider images for showcasing products."
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>
