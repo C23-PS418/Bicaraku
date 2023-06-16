@@ -1,8 +1,8 @@
 <?php
-$servername = "185.229.118.73";
-$database = "u1573859_coba";
-$username = "u1573859_coba";
-$password = "Azhari427791";
+$servername = "";
+$database = "";
+$username = "";
+$password = "";
 
 // membuat koneksi
 $conn = mysqli_connect($servername, $username, $password, $database);
