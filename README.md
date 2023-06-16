@@ -1,9 +1,5 @@
-<div align="center">
-  <img src=https://github.com/C23-PS418/Bicaraku/blob/MD/Bicaraku/app/src/main/res/drawable/bicaraku_logo.png
-    width="400" height="400">
-  
-  # Bicaraku :open_hands:
-</div>
+# Bicaraku :open_hands:
+<img src=https://github.com/C23-PS418/Bicaraku/blob/main/bicaraku_layout.png>
 
 ## Application Description & Background
 Bicaraku is an application that can help people to communicate with the deaf and mute using sign language. The main goal of this application is to increase ordinary people's knowledge of sign language and make it easier for people who do not understand sign language to communicate with deaf and mute disabled people without any restrictions. Although learning sign language takes time to learn and understand, it is hoped that this application can help provide easy-to-use tools for the deaf and mute in communicating with others, so that they are not only able to communicate with certain people.
