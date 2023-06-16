@@ -1,0 +1,116 @@
+Set Project ID:
+gcloud config set project [project_id]
+
+Connect to MySQL using the Shell in google cloud:
+gcloud sql connect [INSTANCE_NAME] --user=root
+
+Login in the Google SDK:
+gcloud auth login
+
+Deploy the app:
+gcloud app deploy
+
+Deploy on an existing version:
+gcloud app deploy --version <version-id>
+
+Don't promote this version to PROD:
+gcloud app deploy --version <version-id> --no-promote
+
+
+Connect to MySQL DB locally:
+/cloud_sql_proxy -instances=<INSTANCE_CONNECTION_NAME>=tcp:3306
+
+https://cloud.google.com/sql/docs/mysql/connect-admin-proxy 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$connection = mysqli_connect(null, '[USR]', '[PASS]', '[DB]', null, '[CONN]')
+
+
+
+
+https://github.com/GoogleCloudPlatform/php-docs-samples/blob/master/appengine/php72/cloudsql/index.php
