@@ -1,5 +1,6 @@
 <div align="center">
-  <img src=https://github.com/C23-PS418/Bicaraku/blob/MD/Bicaraku/app/src/main/res/drawable/bicaraku_logo.png>
+  <img src=https://github.com/C23-PS418/Bicaraku/blob/MD/Bicaraku/app/src/main/res/drawable/bicaraku_logo.png
+    width="400" height="400">
   
   # Bicaraku :open_hands:
 </div>
